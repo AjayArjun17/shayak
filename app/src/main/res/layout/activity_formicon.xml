@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bts.sahayak.Formicon">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/moneybag"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:hint="Yearly Income"
+        android:drawableLeft="@drawable/yearlyincomeicon"
+        android:layout_alignParentTop="true"
+        android:numeric="integer"
+        android:maxEms="15"
+        android:minEms="3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentEnd="true" />
+    </android.support.design.widget.TextInputLayout>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:hint="Investment U/S 80c"
+        android:numeric="integer"
+        android:maxEms="15"
+        android:minEms="3"
+        android:drawableLeft="@drawable/invesmenticon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="250dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/resetbutton"
+        android:id="@+id/button4"
+        android:layout_below="@+id/textView3"
+        android:layout_toStartOf="@+id/button5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calculatebutton"
+        android:id="@+id/button5"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="For More Detailed calculations:"
+        android:id="@+id/textView3"
+        android:textColor="#F171"
+        android:textSize="15dp"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="16dp"
+        android:textColor="#F00"
+        android:id="@+id/textView4"
+        android:text="click here"
+        android:onClick="click here"
+        android:clickable="true"
+        android:layout_marginRight="2dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+
+</RelativeLayout>

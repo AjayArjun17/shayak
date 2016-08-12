@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.example.bts.sahayak.fourthscreen">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="false"></ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText8"
+    android:hint="Yearly Income"
+    android:numeric="integer"
+    android:focusable="true"
+    android:isScrollContainer="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText9"
+    android:numeric="integer"
+    android:isScrollContainer="true"
+    android:gravity="center_vertical"
+    android:hint="Investments in PF"
+    android:layout_below="@+id/editText8"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText10"
+    android:gravity="center_vertical"
+    android:hint="Investment In RGESS"
+    android:isScrollContainer="true"
+    android:numeric="integer"
+    android:layout_below="@+id/editText9"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText11"
+    android:isScrollContainer="true"
+    android:numeric="integer"
+    android:gravity="center_vertical"
+    android:hint="Investment In NPS"
+    android:layout_below="@+id/editText10"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText12"
+    android:isScrollContainer="true"
+    android:gravity="center_vertical"
+    android:numeric="integer"
+    android:layout_below="@+id/editText11"
+    android:hint="Medical insurance Premium"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText13"
+    android:gravity="center_vertical"
+    android:isScrollContainer="true"
+    android:numeric="integer"
+    android:layout_below="@+id/editText12"
+    android:hint="Eligible Donations "
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText14"
+    android:numeric="integer"
+    android:gravity="center_vertical"
+    android:isScrollContainer="true"
+    android:layout_below="@+id/editText13"
+    android:hint="Intrest Paid on education loan"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText15"
+    android:numeric="integer"
+    android:gravity="center_vertical"
+
+    android:isScrollContainer="true"
+    android:layout_below="@+id/editText14"
+    android:hint="Intrest received on bank A/C "
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText16"
+    android:numeric="integer"
+    android:gravity="center_vertical"
+    android:layout_below="@+id/editText15"
+    android:isScrollContainer="true"
+    android:hint="Intrest paid on home loan"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/resetbutton"
+        android:id="@+id/button6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calculatebutton"
+        android:id="@+id/button7"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
